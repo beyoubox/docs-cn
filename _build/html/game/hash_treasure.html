@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>哈希宝藏 &mdash; beyou.network latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="怎么设置 gas limit 和 gas price?" href="../guide/gas.html" />
+    <link rel="prev" title="投资者需知" href="../letters/as_an_investor.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> beyou.network
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">置顶</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news/stoken2.html">Stoken简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/community_program.html">全球分散社区联盟计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_sale.html">Stoken公开发售</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken_sale.html">怎么参与Stoken公开发售?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_referral_program.html">Stoken赚取流程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/how_to_join_the_whitelist.html">如何加入白名单</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/query_stoken.html">怎么查询Stoken数据</a></li>
+</ul>
+<p class="caption"><span class="caption-text">合约</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_main_contract.html">Stoken主合约</a></li>
+</ul>
+<p class="caption"><span class="caption-text">科研</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technique/chain_store.html">ChainStore - 基于区块链的分布式数据库系统</a></li>
+</ul>
+<p class="caption"><span class="caption-text">通知</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../letters/as_an_investor.html">投资者需知</a></li>
+</ul>
+<p class="caption"><span class="caption-text">合作服务</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">哈希宝藏</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">新手引导</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">邀请收益</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">引导</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide/gas.html">怎么设置 <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">limit</span></code> 和 <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">price</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/imtoken.html">以太坊钱包: 移动端APP imToken</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/metamask.html">以太坊钱包: PC应用 MetaMask</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">怎么在IOS上使用AutoSSR?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">怎么在Android上使用AutoSSR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">怎么在windows上使用ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">怎么在Mac上使用ShadowsocksX-NG-R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/eth_wallet.html">怎么使用以太坊钱包</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken2_migration.html">Stoken迁移引导</a></li>
+</ul>
+<p class="caption"><span class="caption-text">引用</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../views/stoken_pricing.html">Stoken的定价逻辑和早期机会</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/internet_in_china.html">关于中国的互联网</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/basic_principles.html">基础原则</a></li>
+</ul>
+<p class="caption"><span class="caption-text">投入</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contribute.html">为币游链做贡献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/ex_plan.html">交换白名单计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/donate.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/issue.html">如果有问题？</a></li>
+</ul>
+<p class="caption"><span class="caption-text">规则</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_shareholders_program.html">Stoken股东计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/chatting_group.html">聊天组</a></li>
+</ul>
+<p class="caption"><span class="caption-text">白皮书 v1.1.0</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/background.html">项目背景</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/keywords.html">Beyou Chain简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/abbreviations.html">技术实现</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/summary.html">Beyou Chain生态架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/philosophy.html">Beyou Chain经济模型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/design_principle.html">团队介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/application_description_and_economic_model.html">Beyou Chain发展历程及未来规划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/technical_path.html">免责申明和风险提示</a></li>
+</ul>
+<p class="caption"><span class="caption-text">联系我们</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact_us.html">联系我们</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">beyou.network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>哈希宝藏</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/game/hash_treasure.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="hash-treasure">
+<span id="id1"></span><h1>哈希宝藏<a class="headerlink" href="#hash-treasure" title="Permalink to this headline">¶</a></h1>
+<p>“哈希宝藏”是基于币游链的一款大型去中心化塔防游戏。游戏挖矿和邀请收益完全采用去中心化链上分配，公正透明。</p>
+<p>玩家通过在“哈希宝藏”上搭建防御塔、升级或打怪等方式，来获得BYC代币奖励。“哈希宝藏”里的宝石则和币游链平台的USDB稳定币1:1兑换，用于购买游戏中所需要消耗的物资等。</p>
+<p>玩家花费的宝石越多，获得的BYC代币奖励也越多。</p>
+<a class="reference internal image-reference" href="../_images/hash_treasure.png"><img alt="metamask_enough_stoken.gif" class="align-center" src="../_images/hash_treasure.png" style="width: 100%;" /></a>
+<div class="section" id="id2">
+<h2>新手引导<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>当玩家首次登陆哈希宝藏时，即可免费获得含有20宝石新手礼包（价值20USDT）。此外，平台推出限时首充奖励——玩家首月首次充值，即可享受10%优惠。如：首充100宝石，即享110宝石。</p>
+<p>玩家接收新手礼包后，平台将自动部署建造最低级别的防御塔——价值20宝石的弓箭塔，使玩家立刻享受防御塔收益。获得收益后，玩家可通过向平台充值宝石的方式，不断升级防御塔，每日收获更多的BYC，以求获得更高的回报率。</p>
+<p>防御塔共有10个级别，玩家所拥有的防御塔数量越多，等级越高，越具有攻击力，抵御能力也越高，玩家因此获得的BYC代币收益也就越高。当玩家将防御塔打造到最高级别后，平台将开发“无尽宝藏”模式，进行无限升级。</p>
+<p>在游戏过程中，防御塔可持续120天进行不间断的收益。但是，玩家需要每3天进行一次防御塔维护。每次维护需要消耗2颗宝石，以保证防御塔能每日正常收益。防御塔的维护费用会随着时间的增加，不断减少。当维护费用降为0时，防御塔将停止收益。</p>
+<p>同时，玩家还可以通过“点击炼石”的方式，将已产生BYC收益进行复投，每次复投可享受平台5%额外奖励。</p>
+<p>根据投资额度的不同，玩家的月收益率基本都保持在10%-20%的范围内。玩家可将在游戏中获得BYC代币收益，通过在交易所上售出获得利润，120天每日循环不停赚钱。</p>
+<p>玩家需要注意的是，每次提现需要扣除5%手续费，作为平台的系统维护费用，且每次提现额度最低为10 BYC。</p>
+</div>
+<div class="section" id="id3">
+<h2>邀请收益<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>玩家可通过使用专有HID身份码邀请好友，当玩家投资额大于等于一级邀请人投入资金一半时，获得一级邀请人最低40%，最高100%的每日利息收益。</p>
+<a class="reference internal image-reference" href="../_images/hash_reward.png"><img alt="metamask_enough_stoken.gif" class="align-center" src="../_images/hash_reward.png" style="width: 100%;" /></a>
+<p>为了提高游戏社群的互动性，币游链开发团队特此开展“矿主联盟”计划。每位解锁白银矿工等级的玩家，即可获得600宝石的奖励。当玩家邀请好友达到条件时，自动加入矿主联盟。</p>
+<p>其中，矿主分为「宝石矿主」、「白金矿主」、「黄金矿主」，其身份依靠贡献度提升。贡献度则可以通过邀请的好友及好友的团队充值数量计算，每100宝石 = 100USDT = 1 贡献度，矿主自身充值不会增加自己己的贡献度。</p>
+<p>加入矿主联盟后，玩家可获得矿主身份及联盟新贡分红，还可以根据矿主身份获得BYC全球矿主分红奖励：
+黄金矿主将获得其自身联盟中每周新增贡献度的7%作为矿主联盟收益（BYC）。
+白金矿主将获得其自身联盟中每周新增贡献度的5%作为矿主联盟收益（BYC）。
+宝石矿主将获得其自身联盟中每周新增贡献度的3%作为矿主联盟收益（BYC）。</p>
+<p>为鼓励和感谢更多非矿主游戏玩家，“哈希宝藏”还将推出「质押挖矿」功能。平台会将每周入金USDT/ETH的10%放入质押分红池中, 按照玩家质押比例每周发放分红。</p>
+<p>为进一步确保玩家的收益，我们将推出由智能合约自动执行的平台兑换功能。“哈希宝藏”游戏平台永久支持代币兑换，以创世价格为基准(BYC =0.05 USDT)的保底价格，永久支持玩家向游戏平台兑换其游戏收益所得。并且平台会自动收取玩家20%的收益，用作支付平台的矿工费用。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../guide/gas.html" class="btn btn-neutral float-right" title="怎么设置 gas limit 和 gas price?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../letters/as_an_investor.html" class="btn btn-neutral float-left" title="投资者需知" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Beyou Network Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

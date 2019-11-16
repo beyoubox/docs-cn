@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Beyou Chain简介 &mdash; beyou.network latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="技术实现" href="abbreviations.html" />
+    <link rel="prev" title="项目背景" href="background.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> beyou.network
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">置顶</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news/stoken2.html">Stoken简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/community_program.html">全球分散社区联盟计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_sale.html">Stoken公开发售</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken_sale.html">怎么参与Stoken公开发售?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_referral_program.html">Stoken赚取流程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/how_to_join_the_whitelist.html">如何加入白名单</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/query_stoken.html">怎么查询Stoken数据</a></li>
+</ul>
+<p class="caption"><span class="caption-text">合约</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_main_contract.html">Stoken主合约</a></li>
+</ul>
+<p class="caption"><span class="caption-text">科研</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technique/chain_store.html">ChainStore - 基于区块链的分布式数据库系统</a></li>
+</ul>
+<p class="caption"><span class="caption-text">通知</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../letters/as_an_investor.html">投资者需知</a></li>
+</ul>
+<p class="caption"><span class="caption-text">合作服务</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../game/hash_treasure.html">哈希宝藏</a></li>
+</ul>
+<p class="caption"><span class="caption-text">引导</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide/gas.html">怎么设置 <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">limit</span></code> 和 <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">price</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/imtoken.html">以太坊钱包: 移动端APP imToken</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/metamask.html">以太坊钱包: PC应用 MetaMask</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">怎么在IOS上使用AutoSSR?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">怎么在Android上使用AutoSSR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">怎么在windows上使用ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">怎么在Mac上使用ShadowsocksX-NG-R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/eth_wallet.html">怎么使用以太坊钱包</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken2_migration.html">Stoken迁移引导</a></li>
+</ul>
+<p class="caption"><span class="caption-text">引用</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../views/stoken_pricing.html">Stoken的定价逻辑和早期机会</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/internet_in_china.html">关于中国的互联网</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/basic_principles.html">基础原则</a></li>
+</ul>
+<p class="caption"><span class="caption-text">投入</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contribute.html">为币游链做贡献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/ex_plan.html">交换白名单计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/donate.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/issue.html">如果有问题？</a></li>
+</ul>
+<p class="caption"><span class="caption-text">规则</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_shareholders_program.html">Stoken股东计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/chatting_group.html">聊天组</a></li>
+</ul>
+<p class="caption"><span class="caption-text">白皮书 v1.1.0</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="background.html">项目背景</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Beyou Chain简介</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Beyou Chain愿景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">行业痛点分析和解决方案</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Beyou Chain核心价值</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="abbreviations.html">技术实现</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">Beyou Chain生态架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="philosophy.html">Beyou Chain经济模型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design_principle.html">团队介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="application_description_and_economic_model.html">Beyou Chain发展历程及未来规划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technical_path.html">免责申明和风险提示</a></li>
+</ul>
+<p class="caption"><span class="caption-text">联系我们</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact_us.html">联系我们</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">beyou.network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Beyou Chain简介</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/whitepaper/keywords.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="beyou-chain">
+<h1>Beyou Chain简介<a class="headerlink" href="#beyou-chain" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>Beyou Chain愿景<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>面对游戏市场种种乱象，Beyou Chain希望能改变产业疲软和不成熟的现状。自诞生以来，Beyou Chain便一直致力于打造 全球顶尖的游戏支付公链，在区块链匿名支付与游戏产业结合的领域开辟出新的道路，致力于打造出一个去中心化集支付、开发、娱乐为一体的游戏生态圈:</p>
+<ul class="simple">
+<li><p>(1)玩家在游币的平台上找到优质的区块链游戏，并可以自由、 安全、快捷地交易游戏资产;</p></li>
+<li><p>(2)游戏开发商可以导入更优质的用户，通过游戏即挖矿的模式 增加用户黏性，同时还可以官方的形式将游戏的珍稀资产放入 平台与玩家交易;</p></li>
+<li><p>(3)投资型玩家可以通过挖矿、买卖游戏资产获得收益。对于拥 有游戏梦想的独立开发者，我们还可以通过平台基金、众筹等方 式进行扶持。</p></li>
+<li><p>(4)通过平台统一通证 BYC，确保不同游戏资产之间低成本 高效率转移，保障了客户资产变现能力。</p></li>
+<li><p>(5)不同于 ETH、EOS、波场等其他公链项目， Beyou Chain无需每一个项目发行一个代币，导致价值分散。公链上所 有项目的价值，都集中到 BYC 这一个币上面，让 BYC 不断升 值。任何游戏都使用 BYC 支付流通实现价值传递。用户也不需 要因为参与多个游戏而管理每个游戏的代币。</p></li>
+<li><p>(6)通过模块化设计，屏蔽掉开发细节，让任何人都可以按 照自己的想法在币游链平台发布游戏，而不需要懂开发，做到 大众创新，游戏数量和规模将迎来大爆发。让发布区块链游戏跟 在 ETH 上面发行代币一样简单。</p></li>
+<li><p>(7)通过引入匿名币技术，确保了游戏隐私性，真正的匿名游戏。</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>行业痛点分析和解决方案<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>(1)游戏资产变现困难</p></li>
+</ul>
+<p>市场上游戏平台多样而繁杂，玩家可能花了数百或数千美元 解锁神秘盒，以及无数小时的上场时间来赚取稀有游戏商品。然而， 当玩家终止玩那场比赛时，游戏中皮肤、道具、金币都难以流通和 变现，流通的成本和风险也极高。
+币游链平台公链借助区块链去中心化、分布式节点验证的透 明机制以及高效可流通资产经济模型，将平台所有游戏通证统一 化，以 BYC 作为唯一通证在所有游戏中自由流通，做到低成本， 低风险的游戏物品流通变现，让游戏具备可玩性的同时， 增加玩 家收入，也以此提高游戏粘性。</p>
+<ul class="simple">
+<li><p>(2)游戏公平性难以保证</p></li>
+</ul>
+<p>传统游戏所有数据都存储在中心化服务器上，无法保证游戏 公平性。而Beyou Chain平台所有游戏运行在区块链智能合约上， 它们是分布式的，不可篡改的。
+分布式意味着，合约的输出被网络上的每个人验证;不篡改 意味着一旦智能合约被创建，这永远都无法改变。为了证明公平 性，智能合约的工作方式是采用的是基于一个不可控的基础数据， 再结合一定的公式算法，推导出随机结果，得到的结果依然是随 机的，从而达到真随机性。</p>
+<ul class="simple">
+<li><p>(3)开发成本高</p></li>
+</ul>
+<p>传统游戏由于工作零散，重复开发需求不断，工作分散， 代 币无法重复利用，导致普通游戏开发成本和周期普遍较长， 难以 应对市场瞬息万变的环境。
+Beyou Chain通过模块化设计，完成游戏底层架构开发之后， 只要有好的 Idea，任何人都可以在币游链平台开发和定制自己 的游戏，无需了解开发过程，平台用 户既是开发者也是玩家。这 将极大的降低游戏开发难度，并最大限度发挥大众创新热情， 创 建一个丰富多彩的游戏世界。同时通过币游链平台不断增长的用 户群，确保新游戏有最基础的用户，节省大量的推广成本。</p>
+<ul class="simple">
+<li><p>(4)游戏门槛高</p></li>
+</ul>
+<p>中心化游戏带给用户带来完美的用户体验，但无法保证公平 性，去中心游戏可以保证公平性，但是游戏体验难以提升，同时
+参与游戏的门槛很高，难以普及。币游链将在中心化和去中心中寻找平衡，给用户带来极致的用户体验。
+Beyou Chain自带一套中心化用户系统，类似传统交易所账 户， 系统拥有统一的充值和提现BYC账户，用户通过手机号登录， 并分配UID用户将自己UID作为MEMO值在中心化系统进行充值， 在用户玩游戏的时候，系统自动带着UID作为MEMO向DApp游戏 合约充值，合约将通过UID对用户区分，用户在合约内的资金需要 提现时，合约将用户UID作为MEMO提现到之前充值地址，也就是 中心化系统充值账户。通过以上逻辑，可以实现中心化账户系统调 用游戏合约。</p>
+</div>
+<div class="section" id="id3">
+<h2>Beyou Chain核心价值<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Beyou Chain是一个基于区块链技术的去中心化游戏资源(道具、装 备等虚拟物品)的生产流通平台，且集支付、开发、娱乐为一体。</p>
+<ul class="simple">
+<li><p>(1)打通链上链下支付场景</p></li>
+</ul>
+<p>基于区块链分布式支付，可以为金融行业提供信用背书，运用区 块链存证溯源，通过安全记录和加密的方式，能够对互联网金融业务 中大规模的活性数据进行验证，使得数据在分布式的数据库中实现跨 网和安全共享。既避免了不必要的信息数据中介，保障数据安全性和 真实性，同时也保障了用户的隐私。在未来，区块链匿名支付有望颠覆 第三方中心化支付。
+Beyou Chain公链通过自主开发区块链钱包App，解决传统游戏的支付问题。玩家在Beyou Chain的平台上找到优质区块链游戏后， 可以自由、安全、快捷地交易游戏资产。
+Beyou Chain之后拟将全球的游戏资源以及线上投注支付全部打通，扩大泛娱乐支付板块生态。</p>
+<ul class="simple">
+<li><p>(2)游戏资产道具上链</p></li>
+</ul>
+<p>BeyouChain 不仅仅具有一个稳定高效的区块链网络，更规范了 套游戏行业的道具资源设计标准。 游戏开发商会基于币游链，设计它 们的游戏道具。这样的游戏道具，是唯一、不可更改的。
+在 Beyou Chain 的平台上，游戏的道具可以非常安全自由地流 通，这是一个行业的巨大颠覆。这样的流通，不仅仅是游戏内的一个流 通，更多是全球范围内不同游戏间的流通。在资产上链、道具上链的同 时，解决过往游戏公链难以形成生态的痛点。</p>
+<ul class="simple">
+<li><p>(3)去中心化游戏机制</p></li>
+</ul>
+<p>对于玩家而言，传统游戏的数据缺乏公正性和公开性。因为游戏 公司管理数字虚拟财产的载体是自家服务器，这对玩家产生了制约， 游戏中常常存在不公开、易盗取、数据删除或篡改等风险。
+为了更公平信任的游戏机制，Beyou Chain平台引入可验证随机 数，为游戏中的博彩等细分领域提供公平性极强的应用场景。通过智 能合约发币，做到完全去中心化，任何人都没有办法改变游戏规则。使 玩家在尽情享受游戏乐趣的同时，无需担心项目方暗箱操作或跑路的 风险。</p>
+<ul class="simple">
+<li><p>(4)玩家即股东</p></li>
+</ul>
+<p>对于玩家而言，他们可以在 Beyou Chain 中某个游戏里刷出的稀 有道具，去兑换另一个游戏的关键装备，或者直接安全地兑换成现金/代 币。玩家不再被运营商剥削，也不再担心服务器故障与盗号带来的损失。 整个游戏开发商、玩家以及游戏内可流通的资源，将围绕币游链，形成 一个健康完整的游戏生态。
+此外，每个玩家都可以成为这个生态的共建者。如果对接游戏成功， 所得回报将有25%给生态建设者;50%给整个社区分红;25%给开发者 联盟。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="abbreviations.html" class="btn btn-neutral float-right" title="技术实现" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="background.html" class="btn btn-neutral float-left" title="项目背景" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Beyou Network Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

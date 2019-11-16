@@ -1,0 +1,465 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Stoken迁移引导 &mdash; beyou.network latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Stoken的定价逻辑和早期机会" href="../views/stoken_pricing.html" />
+    <link rel="prev" title="怎么使用以太坊钱包" href="eth_wallet.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> beyou.network
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">置顶</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news/stoken2.html">Stoken简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/community_program.html">全球分散社区联盟计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_sale.html">Stoken公开发售</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stoken_sale.html">怎么参与Stoken公开发售?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_referral_program.html">Stoken赚取流程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_join_the_whitelist.html">如何加入白名单</a></li>
+<li class="toctree-l1"><a class="reference internal" href="query_stoken.html">怎么查询Stoken数据</a></li>
+</ul>
+<p class="caption"><span class="caption-text">合约</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_main_contract.html">Stoken主合约</a></li>
+</ul>
+<p class="caption"><span class="caption-text">科研</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technique/chain_store.html">ChainStore - 基于区块链的分布式数据库系统</a></li>
+</ul>
+<p class="caption"><span class="caption-text">通知</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../letters/as_an_investor.html">投资者需知</a></li>
+</ul>
+<p class="caption"><span class="caption-text">合作服务</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../game/hash_treasure.html">哈希宝藏</a></li>
+</ul>
+<p class="caption"><span class="caption-text">引导</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gas.html">怎么设置 <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">limit</span></code> 和 <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">price</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imtoken.html">以太坊钱包: 移动端APP imToken</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metamask.html">以太坊钱包: PC应用 MetaMask</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shadowrocket.html">怎么在IOS上使用AutoSSR?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ssrr.html">怎么在Android上使用AutoSSR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shadowsocksr_win.html">怎么在windows上使用ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shadowsocksr_mac.html">怎么在Mac上使用ShadowsocksX-NG-R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eth_wallet.html">怎么使用以太坊钱包</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Stoken迁移引导</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#only-1-step">Only 1 step</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#you-will-receive">You will receive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-benefits-of-completing-the-migration">Additional benefits of completing the migration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#precautions">Precautions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#migration-progress-report">Migration progress report</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">引用</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../views/stoken_pricing.html">Stoken的定价逻辑和早期机会</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/internet_in_china.html">关于中国的互联网</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/basic_principles.html">基础原则</a></li>
+</ul>
+<p class="caption"><span class="caption-text">投入</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contribute.html">为币游链做贡献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/ex_plan.html">交换白名单计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/donate.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/issue.html">如果有问题？</a></li>
+</ul>
+<p class="caption"><span class="caption-text">规则</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_shareholders_program.html">Stoken股东计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/chatting_group.html">聊天组</a></li>
+</ul>
+<p class="caption"><span class="caption-text">白皮书 v1.1.0</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/background.html">项目背景</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/keywords.html">Beyou Chain简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/abbreviations.html">技术实现</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/summary.html">Beyou Chain生态架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/philosophy.html">Beyou Chain经济模型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/design_principle.html">团队介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/application_description_and_economic_model.html">Beyou Chain发展历程及未来规划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/technical_path.html">免责申明和风险提示</a></li>
+</ul>
+<p class="caption"><span class="caption-text">联系我们</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact_us.html">联系我们</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">beyou.network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Stoken迁移引导</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/guide/stoken2_migration.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="stoken">
+<span id="stoken2-migration"></span><h1>Stoken迁移引导<a class="headerlink" href="#stoken" title="Permalink to this headline">¶</a></h1>
+<p>We have not authorized any exchange to trading Stoken.
+In order to protect the assets of all holders,
+Please move your Stoken to your own ETH wallet and upgrade to Stoken.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All Stoken holders should follow this instruction to finish the migration before <strong>2019-09-07 23:59:59 UTC</strong>.
+Convert your Stoken to <strong>Stoken</strong>.</p>
+<p>All Stoken holders should follow this instruction to finish the migration before <strong>2019-09-07 23:59:59 UTC</strong>.
+Convert your Stoken to <strong>Stoken</strong>.</p>
+<p>All Stoken holders should follow this instruction to finish the migration before <strong>2019-09-07 23:59:59 UTC</strong>.
+Convert your Stoken to <strong>Stoken</strong>.</p>
+<p>The transfer function of contract (0x82070415FEe803f94Ce5617Be1878503e58F0a6a)
+will stop after <code class="docutils literal notranslate"><span class="pre">2019-09-07</span> <span class="pre">23:59:59</span> <span class="pre">UTC</span></code>.</p>
+</div>
+<div class="section" id="only-1-step">
+<h2>Only 1 step<a class="headerlink" href="#only-1-step" title="Permalink to this headline">¶</a></h2>
+<p>Send your <strong>Stoken</strong> to the <span class="xref std std-ref">stoken2_shareholders_contract</span> address below:</p>
+<a class="reference internal image-reference" href="../_images/qrcode_stoken2_shareholders.svg"><img alt="qrcode_stoken2_shareholders.svg" src="../_images/qrcode_stoken2_shareholders.svg" width="35%" /></a>
+<p><strong>0x7712F76D2A52141D44461CDbC8b660506DCAB752</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Set <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">limit</span></code> to <code class="docutils literal notranslate"><span class="pre">60,000</span></code> or more,
+the rest will be returned automatically.</p>
+<p>Related link: <a class="reference internal" href="gas.html#gas"><span class="std std-ref">怎么设置 gas limit 和 gas price?</span></a></p>
+</div>
+</div>
+<div class="section" id="you-will-receive">
+<h2>You will receive<a class="headerlink" href="#you-will-receive" title="Permalink to this headline">¶</a></h2>
+<p>You will receive <strong>Stoken</strong> in 48 hours.</p>
+</div>
+<div class="section" id="additional-benefits-of-completing-the-migration">
+<h2>Additional benefits of completing the migration<a class="headerlink" href="#additional-benefits-of-completing-the-migration" title="Permalink to this headline">¶</a></h2>
+<p>Once your Stoken is migrated to Stoken,
+you will automatically become a Stoken <strong>SHAREHOLDER</strong>,
+have a 30% annual interest rate,
+and enjoy the #6-20 season sales dividend according to the shareholding ratio.</p>
+<p>See <a class="reference internal" href="../policy/stoken_shareholders_program.html#stoken2-shareholders-program"><span class="std std-ref">Stoken股东计划</span></a> for more details.</p>
+<p>There are 3 statistic timestamps below,
+and all the holders who complete the migration will jointly allocate a part of ETH
+as an <strong>additional reward</strong> according to the proportion in <a class="reference internal" href="../policy/stoken_shareholders_program.html#stoken2-shareholders-program"><span class="std std-ref">Stoken股东计划</span></a>.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 70%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Deadline</p></th>
+<th class="head"><p>ETH amount</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2019-08-25 23:59:59 UTC</p></td>
+<td><p>100 ETH</p></td>
+</tr>
+<tr class="row-odd"><td><p>2019-08-28 23:59:59 UTC</p></td>
+<td><p>100 ETH</p></td>
+</tr>
+<tr class="row-even"><td><p>2019-09-04 23:59:59 UTC</p></td>
+<td><p>100 ETH</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="precautions">
+<h2>Precautions<a class="headerlink" href="#precautions" title="Permalink to this headline">¶</a></h2>
+<p>All <strong>Stoken</strong> should be migrated to <strong>Stoken</strong>, and the deadline is <strong>2019-09-07 23:59:59 UTC</strong>.</p>
+<p>After that time, the transfer function of the original contract will stop.
+Stoken that has not completed the migration will be considered as no-own, and no longer valid.</p>
+<p>The project team and early angel investors had no sales dividends.</p>
+</div>
+<div class="section" id="migration-progress-report">
+<span id="stoken2-migration-report"></span><h2>Migration progress report<a class="headerlink" href="#migration-progress-report" title="Permalink to this headline">¶</a></h2>
+<p>View <span class="xref std std-ref">stoken2_shareholders_contract</span> on Etherscan.io:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://etherscan.io/token/0x82070415fee803f94ce5617be1878503e58f0a6a?a=0x7712f76d2a52141d44461cdbc8b660506dcab752">Stoken txs on 0x7712F76D2A52141D44461CDbC8b660506DCAB752</a></p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 14%" />
+<col style="width: 27%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Date and time</p></th>
+<th class="head"><p>Addresses</p></th>
+<th class="head"><p>Stoken</p></th>
+<th class="head"><p>Stoken</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2019-08-24 19:39:41 UTC</p></td>
+<td><p>169</p></td>
+<td><p>192,775,612.581588</p></td>
+<td><p>256,456,165.529807</p></td>
+</tr>
+<tr class="row-odd"><td><p>2019-08-25 23:59:07 UTC</p></td>
+<td><p>418</p></td>
+<td><p>991,979,423.999787</p></td>
+<td><p>1,316,988,024.930678</p></td>
+</tr>
+<tr class="row-even"><td><p>2019-08-26 01:19:28 UTC</p></td>
+<td><p>429</p></td>
+<td><p>997,160,055.841481</p></td>
+<td><p>1,323,851,233.807258</p></td>
+</tr>
+<tr class="row-odd"><td><p>2019-08-27 19:56:09 UTC</p></td>
+<td><p>622</p></td>
+<td><p>1,063,917,520.446900</p></td>
+<td><p>1,412,135,748.461221</p></td>
+</tr>
+<tr class="row-even"><td><p>2019-08-28 23:23:06 UTC</p></td>
+<td><p>682</p></td>
+<td><p>1,235,465,199.387908</p></td>
+<td><p>1,637,805,166.356042</p></td>
+</tr>
+<tr class="row-odd"><td><p>2019-08-29 14:14:16 UTC</p></td>
+<td><p>716</p></td>
+<td><p>1,373,845,108.774798</p></td>
+<td><p>1,819,485,554.727884</p></td>
+</tr>
+<tr class="row-even"><td><p>2019-08-30 17:33:30 UTC</p></td>
+<td><p>768</p></td>
+<td><p>1,600,885,629.033889</p></td>
+<td><p>2,116,710,400.955038</p></td>
+</tr>
+<tr class="row-odd"><td><p>2019-08-31 18:00:31 UTC</p></td>
+<td><p>799</p></td>
+<td><p>1,655,981,932.800142</p></td>
+<td><p>2,188,597,366.430631</p></td>
+</tr>
+<tr class="row-even"><td><p>2019-09-01 16:47:00 UTC</p></td>
+<td><p>841</p></td>
+<td><p>1,717,177,450.799634</p></td>
+<td><p>2,268,319,814.932441</p></td>
+</tr>
+<tr class="row-odd"><td><p>2019-09-02 19:08:03 UTC</p></td>
+<td><p>888</p></td>
+<td><p>1,731,303,154.742822</p></td>
+<td><p>2,286,669,043.246869</p></td>
+</tr>
+<tr class="row-even"><td><p>2019-09-04 23:53:12 UTC</p></td>
+<td><p>974</p></td>
+<td><p>1,763,060,299.281050</p></td>
+<td><p>2,327,704,843.007735</p></td>
+</tr>
+<tr class="row-odd"><td><p>2019-09-05 18:07:02 UTC</p></td>
+<td><p>1027</p></td>
+<td><p>1,777,594,586.757414</p></td>
+<td><p>2,346,426,062.019761</p></td>
+</tr>
+<tr class="row-even"><td><p>2019-09-06 21:58:59 UTC</p></td>
+<td><p>1081</p></td>
+<td><p>1,789,974,126.873907</p></td>
+<td><p>2,362,325,146.277603</p></td>
+</tr>
+<tr class="row-odd"><td><p>2019-09-07 23:59:59 UTC</p></td>
+<td><p>1150</p></td>
+<td><p>1,819,447,163.630319</p></td>
+<td><p>2,400,083,543.773679</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Algorithm</strong></p>
+<div class="math notranslate nohighlight">
+\[M = S * \frac{(1598918399 - T)}{60 \cdot 60 \cdot 24 \cdot 365} \cdot 1.3\]</div>
+<ul class="simple">
+<li><p><strong>M</strong> The amount of Stoken you will receive</p></li>
+<li><p><strong>S</strong> The amount of Stoken you’ve sent</p></li>
+<li><p><strong>1598918399</strong> The UNIX timestamp of <code class="docutils literal notranslate"><span class="pre">2019-09-07</span> <span class="pre">23:59:59</span> <span class="pre">UTC</span></code></p></li>
+<li><p><strong>T</strong> The timestamp of migration tx you’ve sent</p></li>
+<li><p><strong>60 x60 x24 x365</strong> The seconds of a year</p></li>
+<li><p><strong>1.3</strong> 1 + 30%</p></li>
+</ul>
+<p>For example:</p>
+<ul class="simple">
+<li><p>Address: 0xc3B4EbECC0D668485a286d332b90Fb3927264AC3</p></li>
+<li><p>Sent: 1,000,000.000000 Stoken</p></li>
+<li><p>At tx hash: <a class="reference external" href="https://etherscan.io/tx/0x54d93f56f4ffef379e3f37c81c42d07d9af0b148551f9626344019e4e726a2cd">0x54d93f56f4ffef379e3f37c81c42d07d9af0b148551f9626344019e4e726a2cd</a></p></li>
+<li><p>Timestamp: 1566656611</p></li>
+</ul>
+<p>That is:</p>
+<div class="math notranslate nohighlight">
+\[1,000,000.000000 \cdot \frac{(1598918399 - 1566656611)}{60 \cdot 60 \cdot 24 \cdot 365} \cdot 1.3
+= 1,329,918.962455\]</div>
+<p>The result is: <strong>1,329,918.962455 Stoken</strong> he received.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../views/stoken_pricing.html" class="btn btn-neutral float-right" title="Stoken的定价逻辑和早期机会" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="eth_wallet.html" class="btn btn-neutral float-left" title="怎么使用以太坊钱包" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Beyou Network Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

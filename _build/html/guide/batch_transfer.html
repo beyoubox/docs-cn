@@ -1,0 +1,412 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>How to batch transfer ETH and Stoken? &mdash; beyou.network latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> beyou.network
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">置顶</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news/stoken2.html">Stoken简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/community_program.html">全球分散社区联盟计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_sale.html">Stoken公开发售</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stoken_sale.html">怎么参与Stoken公开发售?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_referral_program.html">Stoken赚取流程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_join_the_whitelist.html">如何加入白名单</a></li>
+<li class="toctree-l1"><a class="reference internal" href="query_stoken.html">怎么查询Stoken数据</a></li>
+</ul>
+<p class="caption"><span class="caption-text">合约</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_main_contract.html">Stoken主合约</a></li>
+</ul>
+<p class="caption"><span class="caption-text">科研</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technique/chain_store.html">ChainStore - 基于区块链的分布式数据库系统</a></li>
+</ul>
+<p class="caption"><span class="caption-text">通知</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../letters/as_an_investor.html">投资者需知</a></li>
+</ul>
+<p class="caption"><span class="caption-text">合作服务</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../game/hash_treasure.html">哈希宝藏</a></li>
+</ul>
+<p class="caption"><span class="caption-text">引导</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gas.html">怎么设置 <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">limit</span></code> 和 <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">price</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imtoken.html">以太坊钱包: 移动端APP imToken</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metamask.html">以太坊钱包: PC应用 MetaMask</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shadowrocket.html">怎么在IOS上使用AutoSSR?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ssrr.html">怎么在Android上使用AutoSSR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shadowsocksr_win.html">怎么在windows上使用ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shadowsocksr_mac.html">怎么在Mac上使用ShadowsocksX-NG-R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eth_wallet.html">怎么使用以太坊钱包</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stoken2_migration.html">Stoken迁移引导</a></li>
+</ul>
+<p class="caption"><span class="caption-text">引用</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../views/stoken_pricing.html">Stoken的定价逻辑和早期机会</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/internet_in_china.html">关于中国的互联网</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/basic_principles.html">基础原则</a></li>
+</ul>
+<p class="caption"><span class="caption-text">投入</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contribute.html">为币游链做贡献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/ex_plan.html">交换白名单计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/donate.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/issue.html">如果有问题？</a></li>
+</ul>
+<p class="caption"><span class="caption-text">规则</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_shareholders_program.html">Stoken股东计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/chatting_group.html">聊天组</a></li>
+</ul>
+<p class="caption"><span class="caption-text">白皮书 v1.1.0</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/background.html">项目背景</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/keywords.html">Beyou Chain简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/abbreviations.html">技术实现</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/summary.html">Beyou Chain生态架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/philosophy.html">Beyou Chain经济模型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/design_principle.html">团队介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/application_description_and_economic_model.html">Beyou Chain发展历程及未来规划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/technical_path.html">免责申明和风险提示</a></li>
+</ul>
+<p class="caption"><span class="caption-text">联系我们</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact_us.html">联系我们</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">beyou.network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>How to batch transfer ETH and Stoken?</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/guide/batch_transfer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-batch-transfer-eth-and-stoken">
+<span id="guide-for-batch-transfer"></span><h1>How to batch transfer ETH and Stoken?<a class="headerlink" href="#how-to-batch-transfer-eth-and-stoken" title="Permalink to this headline">¶</a></h1>
+<p>In order to meet the actual needs of community promoters,
+we developed <a class="reference internal" href="../contracts/batch_transfer.html#batch-transfer-contract"><span class="std std-ref">Batch transfer ETH and Stoken Contract</span></a>.
+It allows you to easily transfer batches of ETH and Stoken in one transaction,
+will significantly reduce transfer costs and operating time.</p>
+<p>This page will show you how to use this <a class="reference internal" href="../contracts/batch_transfer.html#batch-transfer-contract"><span class="std std-ref">Batch transfer ETH and Stoken Contract</span></a> with a practical example.</p>
+<div class="section" id="transfer-plan">
+<h2>Transfer plan<a class="headerlink" href="#transfer-plan" title="Permalink to this headline">¶</a></h2>
+<p>Use a demo ETH wallet <code class="docutils literal notranslate"><span class="pre">0xAAAAfBd0C79865902828c34743AdE9c5a0373141</span></code>
+to transfer ETH and Stokens to the 10 addresses in this table:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 58%" />
+<col style="width: 16%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Address</p></th>
+<th class="head"><p>Amount of ETH</p></th>
+<th class="head"><p>Amount of Stoken</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0xe6A12f1E49c01e795c45D0B1097766E9BA6DA54a</span></code></p></td>
+<td><p>0.002 ETH</p></td>
+<td><p>1,001.000001 Stokens</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0x3d061Bf0DdD7a5e5EFde54bE814D3d649B29E10E</span></code></p></td>
+<td><p>0.002 ETH</p></td>
+<td><p>1,001.000001 Stokens</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0xB8700507c6c0FEfEDa0499c1D1d2e44df8bfbaF9</span></code></p></td>
+<td><p>0.002 ETH</p></td>
+<td><p>1,001.000001 Stokens</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0xbf1c5DCebdd5bBcBa618DEbaA8ab5FACc68dcb98</span></code></p></td>
+<td><p>0.002 ETH</p></td>
+<td><p>1,001.000001 Stokens</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0x119A38595f8FA97B4aff85B5545A7e21dF2d5ae1</span></code></p></td>
+<td><p>0.002 ETH</p></td>
+<td><p>1,001.000001 Stokens</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0x8f644a2C437E1A0B547018FCe4286f0F07d0E3D3</span></code></p></td>
+<td><p>0.002 ETH</p></td>
+<td><p>1,001.000001 Stokens</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0xED8Ce5408BBE7B5C5Fa1A0a508a1432f32b7E8f3</span></code></p></td>
+<td><p>0.002 ETH</p></td>
+<td><p>1,001.000001 Stokens</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0xc3aAf9d7A3B88058d0566Ed9E4d195eD75d0814b</span></code></p></td>
+<td><p>0.002 ETH</p></td>
+<td><p>1,001.000001 Stokens</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">0xB7f8B8b8eA6B9f2FFE92c859640e8C056DEf0d67</span></code></p></td>
+<td><p>0.002 ETH</p></td>
+<td><p>1,001.000001 Stokens</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">0xBF59256fBc1AD66F60663139093FEE609F40cA59</span></code></p></td>
+<td><p>0.002 ETH</p></td>
+<td><p>1,001.000001 Stokens</p></td>
+</tr>
+</tbody>
+</table>
+<p>Under normal conditions,
+20 transfer operations are required.
+With the help of the contract,
+20 transfers can be completed in one operation.</p>
+</div>
+<div class="section" id="tools-preparing">
+<h2>Tools preparing<a class="headerlink" href="#tools-preparing" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">Plan A</p>
+<p><a class="reference internal" href="../_images/google_chrome.svg"><img alt="logo_chrome" height="36px" src="../_images/google_chrome.svg" width="36px" /></a> Google Chrome (Browser) + <a class="reference internal" href="../_images/metamask.svg"><img alt="logo_metamask" height="36px" src="../_images/metamask.svg" width="36px" /></a> MetaMask (extension)</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Plan B</p>
+<p><a class="reference internal" href="../_images/firefox.svg"><img alt="logo_firefox" height="36px" src="../_images/firefox.svg" width="36px" /></a> FireFox (Browser) + <a class="reference internal" href="../_images/metamask.svg"><img alt="logo_metamask" height="36px" src="../_images/metamask.svg" width="36px" /></a> MetaMask (extension)</p>
+</div>
+<p>Here is a guide: <a class="reference internal" href="metamask.html#guide-for-metamask"><span class="std std-ref">以太坊钱包: PC应用 MetaMask</span></a></p>
+</div>
+<div class="section" id="batch-transfer-with-help-of-the-contract">
+<h2>Batch transfer with help of the contract<a class="headerlink" href="#batch-transfer-with-help-of-the-contract" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="approve">
+<h3>1. Approve<a class="headerlink" href="#approve" title="Permalink to this headline">¶</a></h3>
+<p>Approve the <a class="reference internal" href="../contracts/batch_transfer.html#batch-transfer-contract"><span class="std std-ref">Batch transfer ETH and Stoken Contract</span></a> to transfer Stokens from your wallet.</p>
+<p>Code rules: For security reasons,
+<strong>only you</strong> and <strong>use your own wallet</strong> to transfer ETH and Stokens is allowed.</p>
+<p>According to the table data in the example at the beginning of this page.
+There are <cite>1,001.000001 x10 = 10,010.00001 Stokens</cite> will be transferred to 10 different addresses.
+That means you need to have a Stoken balance greater than this number in your wallet
+and then perform the approval.</p>
+<a class="reference internal image-reference" href="../_images/metamask_enough_stoken.gif"><img alt="metamask_enough_stoken.gif" class="align-center" src="../_images/metamask_enough_stoken.gif" style="width: 70%;" /></a>
+<p>Use the Ethereum browser <strong>etherscan.io - Write Contract</strong>,
+interact with <a class="reference internal" href="../contracts/stoken.html#stoken-contract"><span class="std std-ref">Stoken Main Contract (Deprecated in Aug 2019)</span></a> which address is <strong>0x82070415FEe803f94Ce5617Be1878503e58F0a6a</strong>.</p>
+<ol class="arabic simple">
+<li><p>Copy and paste the URL into the target blank and visit it:
+<code class="docutils literal notranslate"><span class="pre">https://etherscan.io/address/0x82070415fee803f94ce5617be1878503e58f0a6a#writeContract</span></code></p></li>
+<li><p>Connect with MetaMask, and confirm.</p></li>
+<li><p>Find the 1st function <code class="docutils literal notranslate"><span class="pre">1.</span> <span class="pre">approve</span></code>,</p></li>
+<li><p>Fill the <a class="reference internal" href="../contracts/batch_transfer.html#batch-transfer-contract"><span class="std std-ref">Batch transfer ETH and Stoken Contract</span></a> address <code class="docutils literal notranslate"><span class="pre">0xf5ed657f9441672788A4935F279956745edf461B</span></code>
+into the <cite>spender</cite> blank,
+then enter the value of Stoken (with 6 decimal digits),
+for example <strong>10010.000010 Stoken</strong> is <code class="docutils literal notranslate"><span class="pre">10010000010</span></code>.</p></li>
+<li><p>Start to write into the contract, perform the approval.
+Confirm the transaction.</p></li>
+<li><p>There is a button <code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">your</span> <span class="pre">transaction</span></code> appears, click it to check the status.
+When it shows <code class="docutils literal notranslate"><span class="pre">Success</span></code>, DONE.</p></li>
+</ol>
+<p>You have successfully approval the <a class="reference internal" href="../contracts/batch_transfer.html#batch-transfer-contract"><span class="std std-ref">Batch transfer ETH and Stoken Contract</span></a> for <code class="docutils literal notranslate"><span class="pre">10010.000010</span> <span class="pre">Stoken</span></code>,
+then you can call the contract to do your batch transfer.</p>
+<a class="reference internal image-reference" href="_static/guide/metamask_stoken_approve.gif"><img alt="metamask_stoken_approve.gif" class="align-center" src="_static/guide/metamask_stoken_approve.gif" style="width: 90%;" /></a>
+<p>If you want to check the approval manually,
+read the contract, through the <code class="docutils literal notranslate"><span class="pre">13.</span> <span class="pre">allowance</span></code>,
+you can verify that is exactly what you want.</p>
+</div>
+<div class="section" id="batch-transfer">
+<h3>2. Batch Transfer<a class="headerlink" href="#batch-transfer" title="Permalink to this headline">¶</a></h3>
+<p>Batch transfer ETH and Stokens to 10 different addresses,
+<strong>0.002 ETH</strong> and <strong>1,001.000001 Stoken</strong> for each.</p>
+<p>Make sure you have a balance of ETH greater than <cite>0.002 x10 =</cite> <strong>0.02 ETH</strong>,
+and already perform a approval of <strong>10010.000010 Stokens</strong> in the previous step.</p>
+<ol class="arabic simple">
+<li><p>Copy and paste the URL into the target blank and visit it:
+<code class="docutils literal notranslate"><span class="pre">https://etherscan.io/address/0xf5ed657f9441672788a4935f279956745edf461b#writeContract</span></code></p></li>
+<li><p>Connect with MetaMask, and confirm.</p></li>
+<li><p>Find the 1st function <code class="docutils literal notranslate"><span class="pre">1.</span> <span class="pre">batchTransfer</span></code>,</p></li>
+<li><p>Fill the first blank <code class="docutils literal notranslate"><span class="pre">batchTransfer</span></code> with ETH amount, the unit is <code class="docutils literal notranslate"><span class="pre">ETH</span></code>,
+in this example it is <cite>0.002 x10 = 0.02 ETH</cite>, so fill with <code class="docutils literal notranslate"><span class="pre">0.02</span></code>.</p></li>
+<li><p>The second blank <code class="docutils literal notranslate"><span class="pre">accounts</span></code>,
+fill with the address, separated by commas <code class="docutils literal notranslate"><span class="pre">,</span></code>,
+no commas <code class="docutils literal notranslate"><span class="pre">,</span></code> ending after the last one.</p></li>
+<li><p>The third blank <code class="docutils literal notranslate"><span class="pre">etherValue</span></code>,
+fill it with the ETH value in wei,
+(1 wei = 0.000000000000000001 ETH),
+so, <strong>0.002 ETH</strong> is <code class="docutils literal notranslate"><span class="pre">2000000000000000</span></code> here.</p></li>
+<li><p>The last blank <code class="docutils literal notranslate"><span class="pre">stokenValue</span></code>,
+fill it with the number of stokens to be transferred per address,
+the last six digits is decimal positions,
+so, <strong>1001.000001 Stoken</strong> is <code class="docutils literal notranslate"><span class="pre">1001000001</span></code> here.</p></li>
+<li><p>Start to write into the contract,
+Confirm the transaction.</p></li>
+<li><p>There is a button <code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">your</span> <span class="pre">transaction</span></code> appears, click it to check the status.
+When it shows <code class="docutils literal notranslate"><span class="pre">Success</span></code>, DONE.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/metamask_batch_transfer.gif"><img alt="metamask_batch_transfer.gif" class="align-center" src="../_images/metamask_batch_transfer.gif" style="width: 90%;" /></a>
+<p>There are 10 transactions of ETH, and 10 transactions of Stoken, finished at one time.
+Both transactions fee and operating time, are greatly reduced.</p>
+<p>That’s all, 2 steps:</p>
+<ul class="simple">
+<li><p>Approve</p></li>
+<li><p>Batch Transfer</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Beyou Network Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

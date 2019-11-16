@@ -1,0 +1,446 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Stoken Main Contract (Deprecated in Aug 2019) &mdash; beyou.network latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> beyou.network
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">置顶</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news/stoken2.html">Stoken简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/community_program.html">全球分散社区联盟计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_sale.html">Stoken公开发售</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken_sale.html">怎么参与Stoken公开发售?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_referral_program.html">Stoken赚取流程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/how_to_join_the_whitelist.html">如何加入白名单</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/query_stoken.html">怎么查询Stoken数据</a></li>
+</ul>
+<p class="caption"><span class="caption-text">合约</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_main_contract.html">Stoken主合约</a></li>
+</ul>
+<p class="caption"><span class="caption-text">科研</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technique/chain_store.html">ChainStore - 基于区块链的分布式数据库系统</a></li>
+</ul>
+<p class="caption"><span class="caption-text">通知</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../letters/as_an_investor.html">投资者需知</a></li>
+</ul>
+<p class="caption"><span class="caption-text">合作服务</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../game/hash_treasure.html">哈希宝藏</a></li>
+</ul>
+<p class="caption"><span class="caption-text">引导</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide/gas.html">怎么设置 <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">limit</span></code> 和 <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">price</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/imtoken.html">以太坊钱包: 移动端APP imToken</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/metamask.html">以太坊钱包: PC应用 MetaMask</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">怎么在IOS上使用AutoSSR?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">怎么在Android上使用AutoSSR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">怎么在windows上使用ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">怎么在Mac上使用ShadowsocksX-NG-R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/eth_wallet.html">怎么使用以太坊钱包</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken2_migration.html">Stoken迁移引导</a></li>
+</ul>
+<p class="caption"><span class="caption-text">引用</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../views/stoken_pricing.html">Stoken的定价逻辑和早期机会</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/internet_in_china.html">关于中国的互联网</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../views/basic_principles.html">基础原则</a></li>
+</ul>
+<p class="caption"><span class="caption-text">投入</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contribute.html">为币游链做贡献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/ex_plan.html">交换白名单计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/donate.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/issue.html">如果有问题？</a></li>
+</ul>
+<p class="caption"><span class="caption-text">规则</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_shareholders_program.html">Stoken股东计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/chatting_group.html">聊天组</a></li>
+</ul>
+<p class="caption"><span class="caption-text">白皮书 v1.1.0</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/background.html">项目背景</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/keywords.html">Beyou Chain简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/abbreviations.html">技术实现</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/summary.html">Beyou Chain生态架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/philosophy.html">Beyou Chain经济模型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/design_principle.html">团队介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/application_description_and_economic_model.html">Beyou Chain发展历程及未来规划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/technical_path.html">免责申明和风险提示</a></li>
+</ul>
+<p class="caption"><span class="caption-text">联系我们</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact_us.html">联系我们</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">beyou.network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Stoken Main Contract (Deprecated in Aug 2019)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/contracts/stoken.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="stoken-main-contract-deprecated-in-aug-2019">
+<span id="stoken-contract"></span><h1>Stoken Main Contract (Deprecated in Aug 2019)<a class="headerlink" href="#stoken-main-contract-deprecated-in-aug-2019" title="Permalink to this headline">¶</a></h1>
+<p>This is the <strong>MAIN CONTRACT</strong> of <span class="xref std std-ref">stoken</span>.</p>
+<p><a class="reference internal" href="../_images/etherscan_verified.svg"><img alt="logo_etherscan_verified" height="36px" src="../_images/etherscan_verified.svg" width="36px" /></a> <a class="reference internal" href="../_images/github.svg"><img alt="logo_github" height="36px" src="../_images/github.svg" width="36px" /></a> <a class="reference internal" href="../_images/verified.svg"><img alt="logo_verified" height="36px" src="../_images/verified.svg" width="36px" /></a></p>
+<ul class="simple">
+<li><p>Contract address is <strong>0x82070415FEe803f94Ce5617Be1878503e58F0a6a</strong></p></li>
+<li><p>Deployed at <a class="reference external" href="https://etherscan.io/tx/0x9f173f8fc13a8efef7cb25b160c09958be03587b9b1af910bf8a9b3a48d68dc9">Tx Hash 0x92f717e0385ec5505aac0e3a093c1f03e2bdffbb4a48d620a62cc80735ff1c83</a></p></li>
+<li><p>Block height <a class="reference external" href="https://etherscan.io/tx/0x9f173f8fc13a8efef7cb25b160c09958be03587b9b1af910bf8a9b3a48d68dc9">7635415</a></p></li>
+<li><p>Open-sourced under the <a class="reference external" href="https://github.com/stoken100g/contracts/blob/master/LICENSE">GNU General Public License v3.0</a></p></li>
+<li><p><a class="reference external" href="https://github.com/stoken100g/contracts/blob/master/Stoken.sol">在github仓库中查看合约代码</a></p></li>
+</ul>
+<p>View on Etherscan.io:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://etherscan.io/token/0x82070415fee803f94ce5617be1878503e58f0a6a">Stoken Tracker</a></p></li>
+<li><p><a class="reference external" href="https://etherscan.io/token/0x82070415fee803f94ce5617be1878503e58f0a6a#readContract">在Etherscan.io中查看合约</a></p></li>
+<li><p><a class="reference external" href="https://etherscan.io/token/0x82070415fee803f94ce5617be1878503e58f0a6a#writeContract">在Etherscan.io中编写合约</a></p></li>
+</ul>
+<div class="section" id="understand-stoken-contract">
+<h2>Understand Stoken Contract<a class="headerlink" href="#understand-stoken-contract" title="Permalink to this headline">¶</a></h2>
+<p>If you want to learn more about stoken contracts, this can help you.</p>
+<div class="section" id="meta">
+<h3>Meta<a class="headerlink" href="#meta" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>// solidity
+
+string private _name = &quot;Beyou.Network 100G Token&quot;;
+string private _symbol = &quot;Stoken&quot;;
+uint8 private _decimals = 6;                // 6 decimals
+uint256 private _cap = 35000000000000000;   // 35 billion
+uint256 private _totalSupply;
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Full Name</dt><dd><p>Beyou.Network 100G Token</p>
+</dd>
+<dt>Symbol</dt><dd><p>Stoken</p>
+</dd>
+<dt>Decimals</dt><dd><p>6</p>
+</dd>
+<dt>Capped TotalSupply</dt><dd><p>35 billion</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="stoken-sale-whitelist-registration-trigger">
+<h3>Stoken-Sale Whitelist Registration trigger<a class="headerlink" href="#stoken-sale-whitelist-registration-trigger" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>// solidity
+
+function transfer(address to, uint256 value) public whenNotPaused returns (bool) {
+    if (_allowWhitelistRegistration &amp;&amp; value == _whitelistRegistrationValue
+        &amp;&amp; inWhitelist(to) &amp;&amp; !inWhitelist(msg.sender) &amp;&amp; isNotContract(msg.sender)) {
+        // Register whitelist for Stoken-Sale
+        _regWhitelist(msg.sender, to);
+        return true;
+    } else {
+        // Normal Transfer
+        _transfer(msg.sender, to, value);
+        return true;
+    }
+}
+</pre></div>
+</div>
+<p>Whitelist registration trigger conditions:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">_allowWhitelistRegistration</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, when registration is allowed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">value</span></code> = <code class="docutils literal notranslate"><span class="pre">_whitelistRegistrationValue</span></code>, that is 1,001 Stokens.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">inWhitelist(to)</span></code>, receiver address is in whitelist.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">!inWhitelist(msg.sender)</span></code>, sender address is not in whitelist.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">isNotContract(msg.sender)</span></code>, sender address is not a contract,
+to avoid any “Coincidental accident” transfer from a contract,
+such as “any type of batch transfer”, “from an exchange” or any other contracts.</p></li>
+</ul>
+<p>Transfers other than those under this special conditions are considered <strong>NORMAL TRANSFERS</strong>.</p>
+</div>
+<div class="section" id="stoken-sale-whitelist-registration-and-referral-reward">
+<h3>Stoken-Sale Whitelist Registration and Referral Reward<a class="headerlink" href="#stoken-sale-whitelist-registration-and-referral-reward" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>// solidity
+
+uint256 private _whitelistRegistrationValue = 1001000000;   // 1001 Stoken
+uint256[15] private _whitelistRefRewards = [                // 100% Reward
+    301000000,  // 301 Stoken for Level.1
+    200000000,  // 200 Stoken for Level.2
+    100000000,  // 100 Stoken for Level.3
+    100000000,  // 100 Stoken for Level.4
+    100000000,  // 100 Stoken for Level.5
+    50000000,   //  50 Stoken for Level.6
+    40000000,   //  40 Stoken for Level.7
+    30000000,   //  30 Stoken for Level.8
+    20000000,   //  20 Stoken for Level.9
+    10000000,   //  10 Stoken for Level.10
+    10000000,   //  10 Stoken for Level.11
+    10000000,   //  10 Stoken for Level.12
+    10000000,   //  10 Stoken for Level.13
+    10000000,   //  10 Stoken for Level.14
+    10000000    //  10 Stoken for Level.15
+];
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>// solidity
+
+function _regWhitelist(address account, address refAccount) internal {
+    _refCount[refAccount] = _refCount[refAccount].add(1);
+    _referrer[account] = refAccount;
+
+    emit StokenSaleWhitelistRegistered(account, refAccount);
+
+    // Whitelist Registration Referral Reward
+    _transfer(msg.sender, address(this), _whitelistRegistrationValue);
+    address cur = account;
+    uint256 remain = _whitelistRegistrationValue;
+    for(uint i = 0; i &lt; _whitelistRefRewards.length; i++) {
+        address rcv = _referrer[cur];
+        if (cur != rcv) {
+            if (_refCount[rcv] &gt; i) {
+                _transfer(address(this), rcv, _whitelistRefRewards[i]);
+                remain = remain.sub(_whitelistRefRewards[i]);
+            }
+        } else {
+            _transfer(address(this), refAccount, remain);
+            break;
+        }
+        cur = _referrer[cur];
+    }
+}
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Transfer 1,001 Stokens to a whitelisted address</dt><dd><p>Will trigger Stoken-Sale whitelist registration.</p>
+</dd>
+<dt>100% of the 1,001 Stokens will be rewarded</dt><dd><p>Up to 15 levels: 301 + 200 + 100 + …</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="check-whether-a-eth-wallet-address-is-whitelisted">
+<span id="check-address-in-whitelist"></span><h3>Check whether a ETH wallet address is whitelisted<a class="headerlink" href="#check-whether-a-eth-wallet-address-is-whitelisted" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>// solidity
+
+function inWhitelist(address account) public view returns (bool) {
+    return _referrer[account] != address(0);
+}
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Check whether a ETH wallet address is whitelisted</dt><dd><p>Call function <code class="docutils literal notranslate"><span class="pre">inWhitelist(address</span> <span class="pre">account)</span></code>,
+if the given address was whitelisted, it will returns <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="check-whether-the-stoken-sale-whitelist-registration-is-in-process">
+<h3>Check whether the Stoken-Sale whitelist registration is in process<a class="headerlink" href="#check-whether-the-stoken-sale-whitelist-registration-is-in-process" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>// solidity
+
+function allowWhitelistRegistration() public view returns (bool) {
+    return _allowWhitelistRegistration;
+}
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>// solidity
+
+function disableStokenSaleWhitelistRegistration() external onlyOwner {
+    _allowWhitelistRegistration = false;
+    emit StokenSaleWhitelistRegistrationDisabled();
+}
+</pre></div>
+</div>
+<dl>
+<dt>Check whether the whitelisting is in process</dt><dd><p>Call function <code class="docutils literal notranslate"><span class="pre">allowWhitelistRegistration()</span></code>,
+if it returns <code class="docutils literal notranslate"><span class="pre">true</span></code>, registration is allowed.</p>
+<p>Whenever it returns <code class="docutils literal notranslate"><span class="pre">false</span></code>,
+that means registration was disabled, and it’s unrecoverable.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="whitelist-qualification-transfer-is-supported">
+<span id="whitelist-transfer-whitelist-qualification"></span><h3>Whitelist qualification transfer is supported<a class="headerlink" href="#whitelist-qualification-transfer-is-supported" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>// solidity
+
+function transferWhitelist(address account) external onlyInWhitelist {
+    require(isNotContract(account));
+    _refCount[account] = _refCount[msg.sender];
+    _refCount[msg.sender] = 0;
+    _referrer[account] = _referrer[msg.sender];
+    _referrer[msg.sender] = address(0);
+    emit StokenSaleWhitelistTransferred(msg.sender, account);
+}
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Whitelist qualification transfer is supported</dt><dd><p>Just call function <code class="docutils literal notranslate"><span class="pre">transferWhitelist(address</span> <span class="pre">account)</span></code> if you need.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Beyou Network Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

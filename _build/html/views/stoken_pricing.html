@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Stoken的定价逻辑和早期机会 &mdash; beyou.network latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="关于中国的互联网" href="internet_in_china.html" />
+    <link rel="prev" title="Stoken迁移引导" href="../guide/stoken2_migration.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> beyou.network
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">置顶</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../news/stoken2.html">Stoken简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/community_program.html">全球分散社区联盟计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_sale.html">Stoken公开发售</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken_sale.html">怎么参与Stoken公开发售?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_referral_program.html">Stoken赚取流程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/how_to_join_the_whitelist.html">如何加入白名单</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/query_stoken.html">怎么查询Stoken数据</a></li>
+</ul>
+<p class="caption"><span class="caption-text">合约</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../stoken/stoken_main_contract.html">Stoken主合约</a></li>
+</ul>
+<p class="caption"><span class="caption-text">科研</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technique/chain_store.html">ChainStore - 基于区块链的分布式数据库系统</a></li>
+</ul>
+<p class="caption"><span class="caption-text">通知</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../letters/as_an_investor.html">投资者需知</a></li>
+</ul>
+<p class="caption"><span class="caption-text">合作服务</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../services/beyou_connect.html">币游连接 (Alpha)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/autossr.html">AutoSSR: 免费 ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">怎么在IOS上使用AutoSSR?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">怎么在Android上使用AutoSSR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">怎么在windows上使用ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">怎么在Mac上使用ShadowsocksX-NG-R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../services/optss.html">优化的shadowsocks</a></li>
+</ul>
+<p class="caption"><span class="caption-text">引导</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide/gas.html">怎么设置 <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">limit</span></code> 和 <code class="docutils literal notranslate"><span class="pre">gas</span> <span class="pre">price</span></code>?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/imtoken.html">以太坊钱包: 移动端APP imToken</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/metamask.html">以太坊钱包: PC应用 MetaMask</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowrocket.html">怎么在IOS上使用AutoSSR?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/ssrr.html">怎么在Android上使用AutoSSR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_win.html">怎么在windows上使用ShadowsocksR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/shadowsocksr_mac.html">怎么在Mac上使用ShadowsocksX-NG-R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/eth_wallet.html">怎么使用以太坊钱包</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/stoken2_migration.html">Stoken迁移引导</a></li>
+</ul>
+<p class="caption"><span class="caption-text">引用</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Stoken的定价逻辑和早期机会</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">具有明确使用价值的第一种加密货币</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">什么是Stoken?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stoken-100gb">1 Stoken = 100GB 客户端流量</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#gb">100GB流量价值多少?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#idc">在IDC中资源的价值</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#stoken-price-during-the-public-sale-0-03377-0-121">Stoken price during the Public-Sale: $0.03377 - $0.121</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">币游链的三原则</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="internet_in_china.html">关于中国的互联网</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic_principles.html">基础原则</a></li>
+</ul>
+<p class="caption"><span class="caption-text">投入</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contribute.html">为币游链做贡献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/ex_plan.html">交换白名单计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/donate.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/issue.html">如果有问题？</a></li>
+</ul>
+<p class="caption"><span class="caption-text">规则</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../policy/stoken_shareholders_program.html">Stoken股东计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/chatting_group.html">聊天组</a></li>
+</ul>
+<p class="caption"><span class="caption-text">白皮书 v1.1.0</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/background.html">项目背景</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/keywords.html">Beyou Chain简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/abbreviations.html">技术实现</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/summary.html">Beyou Chain生态架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/philosophy.html">Beyou Chain经济模型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/design_principle.html">团队介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/application_description_and_economic_model.html">Beyou Chain发展历程及未来规划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitepaper/technical_path.html">免责申明和风险提示</a></li>
+</ul>
+<p class="caption"><span class="caption-text">联系我们</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact_us.html">联系我们</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">beyou.network</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Stoken的定价逻辑和早期机会</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/views/stoken_pricing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="stoken">
+<span id="stoken-pricing"></span><h1>Stoken的定价逻辑和早期机会<a class="headerlink" href="#stoken" title="Permalink to this headline">¶</a></h1>
+<p>只需考虑这样一个问题：</p>
+<div class="line-block">
+<div class="line">如果您有机会</div>
+<div class="line"><strong>可以花$1购买$100，</strong></div>
+<div class="line">先到先得，</div>
+<div class="line"><strong>你想要多少</strong>？</div>
+</div>
+<div class="section" id="id1">
+<h2>具有明确使用价值的第一种加密货币<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>绝大多数区块链网络只是一组会计系统。
+这些加密货币不依赖任何抵押或信用来发行，
+他们的价格支持来自持有人的观念。</p>
+<p>但是Stoken却大不相同。</p>
+<div class="section" id="id2">
+<h3>什么是Stoken?<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p><a href="#id3"><span class="problematic" id="id4">**</span></a>Stoken**是币游生态系统中的唯一令牌，
+使用PoS共识机制，是vnCHAIN上的本地资产。</p>
+</div>
+<div class="section" id="stoken-100gb">
+<h3>1 Stoken = 100GB 客户端流量<a class="headerlink" href="#stoken-100gb" title="Permalink to this headline">¶</a></h3>
+<p><a href="#id5"><span class="problematic" id="id6">**</span></a>Stoken**是第一个具有清晰使用价值的加密货币。</p>
+<p>在基础代码中，将1个Stoken定义为100GBytes的客户端流量，
+即：<strong>1 Stoken = 100GB客户端流量</strong>。</p>
+</div>
+</div>
+<div class="section" id="gb">
+<h2>100GB流量价值多少?<a class="headerlink" href="#gb" title="Permalink to this headline">¶</a></h2>
+<p>在流量中，可以清楚地检查所有类型的网络资源的价格，她由主要的IDC服务提供商提供，并明确定价。</p>
+<div class="section" id="idc">
+<h3>在IDC中资源的价值<a class="headerlink" href="#idc" title="Permalink to this headline">¶</a></h3>
+<p><span class="xref std std-ref">the_price_of_resource_in_an_idc</span></p>
+<p>对于100GB的网络流量，有成熟的IDC的价格参考，
+例如，使用Amazon Web Services AWS的价格为每100GB流量约**$8.50**
+Google Cloud Platform GCP约**$8.0**。</p>
+<p>加速流量更昂贵，而普通流量更便宜。</p>
+<dl class="simple">
+<dt>AWS Amazon Web Services:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://aws.amazon.com/directconnect/pricing/">AWS Direct Connect pricing</a></p></li>
+<li><p><a class="reference external" href="https://aws.amazon.com/cloudfront/pricing/">AWS CloudFront Pricing</a></p></li>
+</ul>
+</dd>
+<dt>GCP Google Cloud Platform:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://cloud.google.com/interconnect/">GCP Interconnect Pricing</a></p></li>
+<li><p><a class="reference external" href="https://cloud.google.com/cdn/pricing/">GCP CDN Pricing</a></p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="stoken-price-during-the-public-sale-0-03377-0-121">
+<h2>Stoken price during the Public-Sale: $0.03377 - $0.121<a class="headerlink" href="#stoken-price-during-the-public-sale-0-03377-0-121" title="Permalink to this headline">¶</a></h2>
+<p><span class="xref std std-ref">incremental_stoken_sales_price</span></p>
+<p>从**1 Stoken = $0.03377**开始,到价格达到 <a href="#id7"><span class="problematic" id="id8">**</span></a>$0.121**结束.</p>
+<p>查看更多: <a class="reference internal" href="../stoken/stoken_sale.html#stoken2-sale"><span class="std std-ref">Stoken公开发售</span></a></p>
+</div>
+<div class="section" id="id9">
+<h2>币游链的三原则<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>在币游链生态中有三个主要原则:</p>
+<ol class="arabic">
+<li><p>自由，平等，开放，共享是互联网的基本基因，通信安全和隐私保护是用户的基本权利。</p></li>
+<li><p>服务创造真正的价值。</p></li>
+<li><div class="line-block">
+<div class="line">用户付费，服务提供商收费，</div>
+</div>
+</li>
+</ol>
+<p>   | <strong>这是自然的交易场景</strong>。</p>
+<p>它们是项目的基础，
+自然的价值法则，
+也是我们的理想：
+如果建立了这三个原则，
+整个项目的价值毋庸置疑。</p>
+<hr class="docutils" />
+<p>加入我们，加入革命</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="internet_in_china.html" class="btn btn-neutral float-right" title="关于中国的互联网" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../guide/stoken2_migration.html" class="btn btn-neutral float-left" title="Stoken迁移引导" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2019, Beyou Network Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, Beyou Network Project
+# This file is distributed under the same license as the beyou.network package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# VNET Michael <michael@beyoubox.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: beyou.network latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-23 21:26+0800\n"
+"PO-Rebeyou-Date: 2019-08-14 06:12+0000\n"
+"Last-Translator: VNET Michael <michael@beyoubox.com>, 2019\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/stoken/teams/95092/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../policy/stoken2_migration.rst:4
+msgid "Stoken迁移引导"
+msgstr "Stoken 迁移指导"
+
+#: ../../policy/stoken2_migration.rst:7
+msgid ""
+"All Stoken holders should follow this instruction to finish the migration "
+"before **2019-09-07 23:59:59 UTC**. Convert your Stoken to **Stoken**."
+msgstr ""
+"所有 Stoken 持有者都应按此指示，在 **2019-09-07 23:59:59 UTC** 前完成迁移。将您的 Stoken 转换升级为 "
+"**Stoken** 。"
+
+#: ../../policy/stoken2_migration.rst:13
+msgid "Only 1 step"
+msgstr "只需 1 步"
+
+#: ../../policy/stoken2_migration.rst:15
+msgid ""
+"Send your **Stoken** to the :ref:`stoken2_main_contract` address "
+"**0x7712F76D2A52141D44461CDbC8b660506DCAB752**."
+msgstr ""
+"将你的 **Stoken** 发送到 :ref:`stoken2_main_contract` 地址 "
+"**0x7712F76D2A52141D44461CDbC8b660506DCAB752** 。"
+
+#: ../../policy/stoken2_migration.rst:21
+msgid "You will receive"
+msgstr "你将收到"
+
+#: ../../policy/stoken2_migration.rst:23
+msgid "You will receive **Stoken** in 48 hours."
+msgstr "你将在 48 小时内收到 **Stoken** 。"
+
+#: ../../policy/stoken2_migration.rst:28
+msgid "Additional benefits of completing the migration"
+msgstr "完成迁移的附加好处"
+
+#: ../../policy/stoken2_migration.rst:30
+msgid ""
+"Once your Stoken is migrated to Stoken, you will automatically become a "
+"Stoken **SHAREHOLDER**, have a 30% annual interest rate, and enjoy the #6-20 "
+"season sales dividend according to the shareholding ratio."
+msgstr ""
+"一旦 Stoken 迁移到 Stoken 之后，你将自动成为 Stoken **股东** ，年利率为 30％ ，并根据持股比例享受第 6-20 "
+"销售赛季的销售分红。"
+
+#: ../../policy/stoken2_migration.rst:35
+msgid "See :ref:`stoken2_shareholders_program` for more details."
+msgstr "点击 :ref:`stoken2_shareholders_program` 了解更多细节。"
+
+#: ../../policy/stoken2_migration.rst:37
+msgid ""
+"There are 3 statistic timestamps below, and all the holders who complete the"
+" migration will jointly allocate a part of ETH as an additional reward "
+"according to the proportion in :ref:`stoken2_shareholders_program`."
+msgstr ""
+"下面有 3 个统计时间点，所有完成迁移的持有者将按 :ref:`stoken2_shareholders_program` 比例共同分配一部分 ETH "
+"作为额外奖励。"
+
+#: ../../policy/stoken2_migration.rst:42
+msgid "Deadline"
+msgstr "截止时间"
+
+#: ../../policy/stoken2_migration.rst:42
+msgid "ETH amount"
+msgstr "ETH 数量"
+
+#: ../../policy/stoken2_migration.rst:44
+msgid "2019-08-25 23:59:59 UTC"
+msgstr "2019-08-25 23:59:59 UTC"
+
+#: ../../policy/stoken2_migration.rst:44 ../../policy/stoken2_migration.rst:45
+#: ../../policy/stoken2_migration.rst:46
+msgid "100 ETH"
+msgstr "100 ETH"
+
+#: ../../policy/stoken2_migration.rst:45
+msgid "2019-08-28 23:59:59 UTC"
+msgstr "2019-08-28 23:59:59 UTC"
+
+#: ../../policy/stoken2_migration.rst:46
+msgid "2019-09-04 23:59:59 UTC"
+msgstr "2019-09-04 23:59:59 UTC"
+
+#: ../../policy/stoken2_migration.rst:51
+msgid "Precautions"
+msgstr "注意事项"
+
+#: ../../policy/stoken2_migration.rst:53
+msgid ""
+"All **Stoken** should be migrated to **Stoken**, and the deadline is "
+"**2019-09-07 23:59:59 UTC**."
+msgstr ""
+"所有 **Stoken** 都应迁移升级为 **Stoken** ，截止日期为 **2019-09-07 23:59:59 UTC** 。"
+
+#: ../../policy/stoken2_migration.rst:55
+msgid ""
+"After that time, the transfer function of the original contract will stop. "
+"Stoken that has not completed the migration will be considered as no-own, and"
+" no longer valid."
+msgstr "在上述时间之后，原始合约的转账功能将停止。未完成迁移的 Stoken 将被视为无主，并且不再有效。"
+
+#: ../../policy/stoken2_migration.rst:58
+msgid "The project team and early angel investors had no sales dividends."
+msgstr "项目团队和早期天使投资者没有销售红利。"

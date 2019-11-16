@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, Beyou Network Project
+# This file is distributed under the same license as the beyou.network package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# VNET Michael <michael@beyoubox.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: beyou.network latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-06 11:37+0800\n"
+"PO-Rebeyou-Date: 2019-04-11 14:15+0000\n"
+"Last-Translator: VNET Michael <michael@beyoubox.com>, 2019\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/stoken/teams/95092/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../contracts/stoken_sale.rst:4
+msgid "Stoken Public-Sale Contract"
+msgstr "Stoken 公开销售合约"
+
+#: ../../contracts/stoken_sale.rst:6
+msgid "|logo_etherscan_verified| |logo_github| |logo_verified|"
+msgstr "|logo_etherscan_verified| |logo_github| |logo_verified|"
+
+#: ../../contracts/stoken_sale.rst:8
+msgid "ENS Domain is **sale.stoken100g.eth**"
+msgstr "ENS 域名 **sale.stoken100g.eth**"
+
+#: ../../contracts/stoken_sale.rst:9
+msgid "Contract address is **0xAC873993E43A5AF7B39aB4A5a50ce1FbDb7191D3**"
+msgstr "合约地址 **0xAC873993E43A5AF7B39aB4A5a50ce1FbDb7191D3**"
+
+#: ../../contracts/stoken_sale.rst:10
+msgid "Deployed at `Tx Hash 0x92f717e0385ec5505aac0e3a093c1f03e2bdffbb4a48d620a62cc80735ff1c83`_"
+msgstr "部署于 `Tx Hash 0x92f717e0385ec5505aac0e3a093c1f03e2bdffbb4a48d620a62cc80735ff1c83`_"
+
+#: ../../contracts/stoken_sale.rst:11
+msgid "Block height `7635415`_"
+msgstr "区块高度 `7635415`_"
+
+#: ../../contracts/stoken_sale.rst:12
+msgid "Open-sourced under the `GNU General Public License v3.0`_"
+msgstr "已经在 `GNU 通用公区许可证 v3.0`_ 协议下开源"
+
+#: ../../contracts/stoken_sale.rst:13
+msgid "`在github仓库中查看合约代码`_"
+msgstr "`查看合约代码在 github 仓库`_"
+
+#: ../../contracts/stoken_sale.rst:14
+msgid "`在Etherscan.io上查看合约`_"
+msgstr "`通过 Etherscan.io 查看合约`_"
+
+#: ../../contracts/stoken_sale.rst:37
+msgid "Read the status and query data"
+msgstr "查看状态和查询数据"
+
+#: ../../contracts/stoken_sale.rst:39
+msgid "Visit here: :ref:`guide_for_read_stoken_sale_contract`"
+msgstr "访问这里： :ref:`guide_for_read_stoken_sale_contract`"

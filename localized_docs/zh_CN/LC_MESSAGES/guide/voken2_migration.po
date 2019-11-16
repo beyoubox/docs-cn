@@ -1,0 +1,480 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, Beyou Network Project
+# This file is distributed under the same license as the beyou.network package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# VNET Michael <michael@beyoubox.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: beyou.network latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-17 11:29+0800\n"
+"PO-Rebeyou-Date: 2019-08-23 14:31+0000\n"
+"Last-Translator: VNET Michael <michael@beyoubox.com>, 2019\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/stoken/teams/95092/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../guide/stoken2_migration.rst:4
+msgid "Stoken迁移引导"
+msgstr "Stoken 迁移指导"
+
+#: ../../guide/stoken2_migration.rst:6
+msgid ""
+"We have not authorized any exchange to trading Stoken. In order to protect "
+"the assets of all holders, Please move your Stoken to your own ETH wallet and"
+" upgrade to Stoken."
+msgstr ""
+"我们并未授权任何交易所进行 Stoken 交易。为保护所有持有者的资产，请把 Stoken 转到你自己的以太坊钱包并升级到 Stoken 。"
+
+#: ../../guide/stoken2_migration.rst:11 ../../guide/stoken2_migration.rst:14
+#: ../../guide/stoken2_migration.rst:17
+msgid ""
+"All Stoken holders should follow this instruction to finish the migration "
+"before **2019-09-07 23:59:59 UTC**. Convert your Stoken to **Stoken**."
+msgstr ""
+"所有 Stoken 持有者都应按此指示，在 **2019-09-07 23:59:59 UTC** 前完成迁移。将您的 Stoken 转换升级为 "
+"**Stoken** 。"
+
+#: ../../guide/stoken2_migration.rst:20
+msgid ""
+"The transfer function of contract "
+"(0x82070415FEe803f94Ce5617Be1878503e58F0a6a) will stop after ``2019-09-07 "
+"23:59:59 UTC``."
+msgstr ""
+"原合约（0x82070415FEe803f94Ce5617Be1878503e58F0a6a）的转币功能将在 ``2019-09-07 23:59:59"
+" UTC`` 后关闭。"
+
+#: ../../guide/stoken2_migration.rst:26
+msgid "Only 1 step"
+msgstr "只需 1 步"
+
+#: ../../guide/stoken2_migration.rst:28
+msgid ""
+"Send your **Stoken** to the :ref:`stoken2_shareholders_contract` address "
+"below:"
+msgstr "将你的 **Stoken** 发送到下方的 :ref:`stoken2_shareholders_contract` 地址："
+
+#: ../../guide/stoken2_migration.rst:34
+msgid "**0x7712F76D2A52141D44461CDbC8b660506DCAB752**"
+msgstr "**0x7712F76D2A52141D44461CDbC8b660506DCAB752**"
+
+#: ../../guide/stoken2_migration.rst:38
+msgid ""
+"Set ``gas limit`` to ``60,000`` or more, the rest will be returned "
+"automatically."
+msgstr "请将 ``gas limit`` 设置为 ``60,000`` 或更多，剩余部分将自动退回。"
+
+#: ../../guide/stoken2_migration.rst:41
+msgid "Related link: :ref:`gas`"
+msgstr "相关链接： :ref:`gas`"
+
+#: ../../guide/stoken2_migration.rst:46
+msgid "You will receive"
+msgstr "你将收到"
+
+#: ../../guide/stoken2_migration.rst:48
+msgid "You will receive **Stoken** in 48 hours."
+msgstr "你将在 48 小时内收到 **Stoken** 。"
+
+#: ../../guide/stoken2_migration.rst:53
+msgid "Additional benefits of completing the migration"
+msgstr "完成迁移的附加好处"
+
+#: ../../guide/stoken2_migration.rst:55
+msgid ""
+"Once your Stoken is migrated to Stoken, you will automatically become a "
+"Stoken **SHAREHOLDER**, have a 30% annual interest rate, and enjoy the #6-20 "
+"season sales dividend according to the shareholding ratio."
+msgstr ""
+"一旦 Stoken 迁移到 Stoken 之后，你将自动成为 Stoken **股东** ，年利率为 30％ ，并根据持股比例享受第 6-20 "
+"销售赛季的销售分红。"
+
+#: ../../guide/stoken2_migration.rst:60
+msgid "See :ref:`stoken2_shareholders_program` for more details."
+msgstr "点击 :ref:`stoken2_shareholders_program` 了解更多细节。"
+
+#: ../../guide/stoken2_migration.rst:62
+msgid ""
+"There are 3 statistic timestamps below, and all the holders who complete the"
+" migration will jointly allocate a part of ETH as an **additional reward** "
+"according to the proportion in :ref:`stoken2_shareholders_program`."
+msgstr ""
+"下面有 3 个统计时间点，所有完成迁移的持有者将按 :ref:`stoken2_shareholders_program` 比例共同分配一部分 ETH "
+"作为 **额外奖励** 。"
+
+#: ../../guide/stoken2_migration.rst:67
+msgid "Deadline"
+msgstr "截止时间"
+
+#: ../../guide/stoken2_migration.rst:67
+msgid "ETH amount"
+msgstr "ETH 数量"
+
+#: ../../guide/stoken2_migration.rst:69
+msgid "2019-08-25 23:59:59 UTC"
+msgstr "2019-08-25 23:59:59 UTC"
+
+#: ../../guide/stoken2_migration.rst:69 ../../guide/stoken2_migration.rst:70
+#: ../../guide/stoken2_migration.rst:71
+msgid "100 ETH"
+msgstr "100 ETH"
+
+#: ../../guide/stoken2_migration.rst:70
+msgid "2019-08-28 23:59:59 UTC"
+msgstr "2019-08-28 23:59:59 UTC"
+
+#: ../../guide/stoken2_migration.rst:71
+msgid "2019-09-04 23:59:59 UTC"
+msgstr "2019-09-04 23:59:59 UTC"
+
+#: ../../guide/stoken2_migration.rst:76
+msgid "Precautions"
+msgstr "注意事项"
+
+#: ../../guide/stoken2_migration.rst:78
+msgid ""
+"All **Stoken** should be migrated to **Stoken**, and the deadline is "
+"**2019-09-07 23:59:59 UTC**."
+msgstr ""
+"所有 **Stoken** 都应迁移升级为 **Stoken** ，截止日期为 **2019-09-07 23:59:59 UTC** 。"
+
+#: ../../guide/stoken2_migration.rst:80
+msgid ""
+"After that time, the transfer function of the original contract will stop. "
+"Stoken that has not completed the migration will be considered as no-own, and"
+" no longer valid."
+msgstr "在上述时间之后，原始合约的转账功能将停止。未完成迁移的 Stoken 将被视为无主，并且不再有效。"
+
+#: ../../guide/stoken2_migration.rst:83
+msgid "The project team and early angel investors had no sales dividends."
+msgstr "项目团队和早期天使投资者没有销售红利。"
+
+#: ../../guide/stoken2_migration.rst:89
+msgid "Migration progress report"
+msgstr "迁移进度报告"
+
+#: ../../guide/stoken2_migration.rst:91
+msgid "View :ref:`stoken2_shareholders_contract` on Etherscan.io:"
+msgstr "在 Etherscan.io 查看 :ref:`stoken2_shareholders_contract` ："
+
+#: ../../guide/stoken2_migration.rst:93
+msgid "`Stoken txs on 0x7712F76D2A52141D44461CDbC8b660506DCAB752`_"
+msgstr "`0x7712F76D2A52141D44461CDbC8b660506DCAB752 的 Stoken 转账`_"
+
+#: ../../guide/stoken2_migration.rst:100
+msgid "Date and time"
+msgstr "日期和时间"
+
+#: ../../guide/stoken2_migration.rst:100
+msgid "Addresses"
+msgstr "地址数"
+
+#: ../../guide/stoken2_migration.rst:100
+msgid "Stoken"
+msgstr "Stoken 数量"
+
+#: ../../guide/stoken2_migration.rst:100
+msgid "Stoken"
+msgstr "Stoken 数量"
+
+#: ../../guide/stoken2_migration.rst:102
+msgid "2019-08-24 19:39:41 UTC"
+msgstr "2019-08-24 19:39:41 UTC"
+
+#: ../../guide/stoken2_migration.rst:102
+msgid "169"
+msgstr "169"
+
+#: ../../guide/stoken2_migration.rst:102
+msgid "192,775,612.581588"
+msgstr "192,775,612.581588"
+
+#: ../../guide/stoken2_migration.rst:102
+msgid "256,456,165.529807"
+msgstr "256,456,165.529807"
+
+#: ../../guide/stoken2_migration.rst:103
+msgid "2019-08-25 23:59:07 UTC"
+msgstr "2019-08-25 23:59:07 UTC"
+
+#: ../../guide/stoken2_migration.rst:103
+msgid "418"
+msgstr "418"
+
+#: ../../guide/stoken2_migration.rst:103
+msgid "991,979,423.999787"
+msgstr "991,979,423.999787"
+
+#: ../../guide/stoken2_migration.rst:103
+msgid "1,316,988,024.930678"
+msgstr "1,316,988,024.930678"
+
+#: ../../guide/stoken2_migration.rst:104
+msgid "2019-08-26 01:19:28 UTC"
+msgstr "2019-08-26 01:19:28 UTC"
+
+#: ../../guide/stoken2_migration.rst:104
+msgid "429"
+msgstr "429"
+
+#: ../../guide/stoken2_migration.rst:104
+msgid "997,160,055.841481"
+msgstr "997,160,055.841481"
+
+#: ../../guide/stoken2_migration.rst:104
+msgid "1,323,851,233.807258"
+msgstr "1,323,851,233.807258"
+
+#: ../../guide/stoken2_migration.rst:105
+msgid "2019-08-27 19:56:09 UTC"
+msgstr "2019-08-27 19:56:09 UTC"
+
+#: ../../guide/stoken2_migration.rst:105
+msgid "622"
+msgstr "622"
+
+#: ../../guide/stoken2_migration.rst:105
+msgid "1,063,917,520.446900"
+msgstr "1,063,917,520.446900"
+
+#: ../../guide/stoken2_migration.rst:105
+msgid "1,412,135,748.461221"
+msgstr "1,412,135,748.461221"
+
+#: ../../guide/stoken2_migration.rst:106
+msgid "2019-08-28 23:23:06 UTC"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:106
+msgid "682"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:106
+msgid "1,235,465,199.387908"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:106
+msgid "1,637,805,166.356042"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:107
+msgid "2019-08-29 14:14:16 UTC"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:107
+msgid "716"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:107
+msgid "1,373,845,108.774798"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:107
+msgid "1,819,485,554.727884"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:108
+msgid "2019-08-30 17:33:30 UTC"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:108
+msgid "768"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:108
+msgid "1,600,885,629.033889"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:108
+msgid "2,116,710,400.955038"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:109
+msgid "2019-08-31 18:00:31 UTC"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:109
+msgid "799"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:109
+msgid "1,655,981,932.800142"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:109
+msgid "2,188,597,366.430631"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:110
+msgid "2019-09-01 16:47:00 UTC"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:110
+msgid "841"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:110
+msgid "1,717,177,450.799634"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:110
+msgid "2,268,319,814.932441"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:111
+msgid "2019-09-02 19:08:03 UTC"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:111
+msgid "888"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:111
+msgid "1,731,303,154.742822"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:111
+msgid "2,286,669,043.246869"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:112
+msgid "2019-09-04 23:53:12 UTC"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:112
+msgid "974"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:112
+msgid "1,763,060,299.281050"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:112
+msgid "2,327,704,843.007735"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:113
+msgid "2019-09-05 18:07:02 UTC"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:113
+msgid "1027"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:113
+msgid "1,777,594,586.757414"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:113
+msgid "2,346,426,062.019761"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:114
+msgid "2019-09-06 21:58:59 UTC"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:114
+msgid "1081"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:114
+msgid "1,789,974,126.873907"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:114
+msgid "2,362,325,146.277603"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:115
+msgid "2019-09-07 23:59:59 UTC"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:115
+msgid "1150"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:115
+msgid "1,819,447,163.630319"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:115
+msgid "2,400,083,543.773679"
+msgstr ""
+
+#: ../../guide/stoken2_migration.rst:121
+msgid "**Algorithm**"
+msgstr "**算法**"
+
+#: ../../guide/stoken2_migration.rst:123
+msgid "M = S * \\frac{(1598918399 - T)}{60 \\cdot 60 \\cdot 24 \\cdot 365} \\cdot 1.3"
+msgstr "M = S * \\frac{(1598918399 - T)}{60 \\cdot 60 \\cdot 24 \\cdot 365} \\cdot 1.3"
+
+#: ../../guide/stoken2_migration.rst:127
+msgid "**M** The amount of Stoken you will receive"
+msgstr "**M** 你将收到的 Stoken 数量"
+
+#: ../../guide/stoken2_migration.rst:128
+msgid "**S** The amount of Stoken you've sent"
+msgstr "**S** 你发送的 Stoken 数量"
+
+#: ../../guide/stoken2_migration.rst:129
+msgid "**1598918399** The UNIX timestamp of ``2019-09-07 23:59:59 UTC``"
+msgstr "**1598918399** ``2019-09-07 23:59:59 UTC`` 的 UNIX 时间戳"
+
+#: ../../guide/stoken2_migration.rst:130
+msgid "**T** The timestamp of migration tx you've sent"
+msgstr "**T** 迁移交易的时间戳"
+
+#: ../../guide/stoken2_migration.rst:131
+msgid "**60 x60 x24 x365** The seconds of a year"
+msgstr "**60 x60 x24 x365** 一年的秒数"
+
+#: ../../guide/stoken2_migration.rst:132
+msgid "**1.3** 1 + 30%"
+msgstr "**1.3** 1 + 30%"
+
+#: ../../guide/stoken2_migration.rst:134
+msgid "For example:"
+msgstr "举例："
+
+#: ../../guide/stoken2_migration.rst:136
+msgid "Address: 0xc3B4EbECC0D668485a286d332b90Fb3927264AC3"
+msgstr "地址： 0xc3B4EbECC0D668485a286d332b90Fb3927264AC3"
+
+#: ../../guide/stoken2_migration.rst:137
+msgid "Sent: 1,000,000.000000 Stoken"
+msgstr "发送： 1,000,000.000000 Stoken"
+
+#: ../../guide/stoken2_migration.rst:138
+msgid ""
+"At tx hash: "
+"`0x54d93f56f4ffef379e3f37c81c42d07d9af0b148551f9626344019e4e726a2cd`_"
+msgstr ""
+"交易哈希： `0x54d93f56f4ffef379e3f37c81c42d07d9af0b148551f9626344019e4e726a2cd`_"
+
+#: ../../guide/stoken2_migration.rst:139
+msgid "Timestamp: 1566656611"
+msgstr "时间戳： 1566656611"
+
+#: ../../guide/stoken2_migration.rst:144
+msgid "That is:"
+msgstr "即："
+
+#: ../../guide/stoken2_migration.rst:146
+msgid ""
+"1,000,000.000000 \\cdot \\frac{(1598918399 - 1566656611)}{60 \\cdot 60 "
+"\\cdot 24 \\cdot 365} \\cdot 1.3 = 1,329,918.962455"
+msgstr ""
+"1,000,000.000000 \\cdot \\frac{(1598918399 - 1566656611)}{60 \\cdot 60 "
+"\\cdot 24 \\cdot 365} \\cdot 1.3 = 1,329,918.962455"
+
+#: ../../guide/stoken2_migration.rst:151
+msgid "The result is: **1,329,918.962455 Stoken** he received."
+msgstr "结果是：收到 **1,329,918.962455 Stoken** 。"

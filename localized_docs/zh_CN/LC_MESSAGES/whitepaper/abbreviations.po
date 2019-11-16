@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, Beyou Network Project
+# This file is distributed under the same license as the beyou.network package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# BEYOU official <michael@beyoubox.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: beyou.network latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-16 16:25+0800\n"
+"PO-Rebeyou-Date: 2019-01-19 08:45+0000\n"
+"Last-Translator: BEYOU official <michael@beyoubox.com>, 2019\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/stoken/teams/95092/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../whitepaper/abbreviations.rst:2
+msgid "Abbreviations"
+msgstr "缩写"
+
+#: ../../whitepaper/abbreviations.rst:4
+msgid ""
+"In the Beyou Network system, include websites, documents, and various "
+"articles:"
+msgstr "在 Beyou Network 远景网络体系内的网站、文档以及各种文章中："
+
+#: ../../whitepaper/abbreviations.rst:6
+msgid ""
+"Uppercase ``BEYOU`` abbreviation will be used to refer to the Beyou "
+"Network, the entire project."
+msgstr "大写的 ``BEYOU`` 简称将用来指代 Beyou Network 远景网络和整个项目。"
+
+#: ../../whitepaper/abbreviations.rst:7
+msgid ""
+"Typo ``Stoken`` and ``Stokens`` abbreviation used to refer to :ref:`stoken`"
+msgstr "拼写 ``Stoken`` 或 ``Stokens`` 简称用来称呼 :ref:`stoken`"
